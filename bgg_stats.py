@@ -20,7 +20,6 @@ ac_raw = raw_data["ac_raw"]
 as_raw = raw_data["as_raw"]
 ew_raw = raw_data["ew_raw"]
 wy_raw = raw_data["wy_raw"]
-# replace 0 ratings with NaN
 
 heading = ["Game", "AC", "AS", "EW", "WY", "Average"]
 
@@ -53,11 +52,6 @@ collection = sqldf(q)
 collection = collection.replace(0, np.NaN)
 # axis = 1 -> searches column-wise and returns the mean for each row
 collection["average"] = collection.mean(axis = 1, numeric_only = True)
-# output number of ratings per person
-print("\nratings breakdown\nAC: " + str(collection["ac_rating"].count()) + " ratings\n" + 
-    "AS: " + str(collection["as_rating"].count()) + " ratings\n" + 
-    "EW: " + str(collection["ew_rating"].count()) + " ratings\n" + 
-    "WY: " + str(collection["wy_rating"].count()) + " ratings\n")
 # verbose output
 if verbose == True:
     print("combined collection")
@@ -145,3 +139,15 @@ if verbose == True:
     print("\nstats")
     for i in range(len(stats_dfs)):
         print(tabulate(stats_dfs[i], headers = "keys", tablefmt = "psql"))
+
+# output number of ratings per person
+print("\nratings breakdown\nAC: " + str(collection["ac_rating"].count()) + " ratings\n" + 
+    "AS: " + str(collection["as_rating"].count()) + " ratings\n" + 
+    "EW: " + str(collection["ew_rating"].count()) + " ratings\n" + 
+    "WY: " + str(collection["wy_rating"].count()) + " ratings\n")
+with open("stats.csv", "a") as f:
+    f.write("\nratings breakdown\nAC: " + str(collection["ac_rating"].count()) + " ratings\n" + 
+    "AS: " + str(collection["as_rating"].count()) + " ratings\n" + 
+    "EW: " + str(collection["ew_rating"].count()) + " ratings\n" + 
+    "WY: " + str(collection["wy_rating"].count()) + " ratings\n")
+    f.close()
