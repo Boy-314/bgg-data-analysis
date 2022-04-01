@@ -3,7 +3,7 @@
 input: google sheets containing raw bgg collection data
 
 outputs:
-1. csv of games that all of us have given ratings to, with ratigns and average columns
+1. csv of games that all of us have given ratings to, with ratings and average columns
 2. csv of all of our collections combined, with ratings and average columns
 3. csv of interesting statistics, such as best/worst games, controversial games, etc.
 
