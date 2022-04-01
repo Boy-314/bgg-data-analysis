@@ -8,3 +8,5 @@ outputs:
 3. csv of interesting statistics, such as best/worst games, controversial games, etc.
 
 manually - feed outputs back into google sheets via import -> replace current sheet
+
+run with -v to print dataframes into standard output.
