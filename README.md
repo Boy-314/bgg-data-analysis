@@ -1,6 +1,6 @@
 # bgg-data-analysis
 
-input: google sheets containing raw bgg collection data
+inputs: none in standard input, link to google sheets containing raw bgg collection data in source code
 
 outputs:
 1. csv of games that all of us have given ratings to, with ratings and average columns
