@@ -1,0 +1,32 @@
+,Best Agreed Upon Games,Avg. Rating
+114,Spirit Island,9.5
+26,Brian Boru: High King of Ireland,8.25
+40,Clank!: A Deck-Building Adventure,8.125
+110,Skull King,8.0
+
+,Worst Agreed Upon Games,Avg. Rating
+62,Eldritch Horror,4.875
+
+,Most Controversial Games,Range
+144,Vast: The Crystal Caverns,6.5
+17,Betrayal at House on the Hill,5.5
+62,Eldritch Horror,4.5
+65,Exploding Kittens,4.0
+145,We Didn't Playtest This At All,4.0
+58,Dixit,4.0
+64,Everdell,4.0
+104,Robinson Crusoe: Adventures on the Cursed Island,4.0
+124,The Binding of Isaac: Four Souls,3.5
+103,Riichi Mahjong,3.0
+
+,Name,Std Dev
+3,WY,2.2376202636829254
+1,AS,1.7719215226281724
+2,EW,1.0800520767243738
+0,AC,0.912639038455943
+
+,Name,Correlation
+1,AS,0.41360738875405256
+2,EW,0.239196572462266
+3,WY,0.0954354756132396
+0,AC,-0.05664284031829061
